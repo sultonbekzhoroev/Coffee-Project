@@ -1,12 +1,47 @@
-html {
-  box-sizing: border-box;
-}
-
 body {
-  background-color: gray;
+  background-color: burlywood;
+  text-align: center;
 }
 .container {
   margin: auto;
-  width: 800px;
+  width: 500px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
   text-align: center;
+}
+
+.form {
+  display: inline;
+}
+
+.btn {
+  height: 30px;
+  border-radius: 5px;
+}
+
+img {
+  width: 140px;
+  height: 140px;
+}
+
+img:hover {
+  opacity: 0.5;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  width: 40%;
+  height: 30px;
+  border-radius: 10px;
+}
+
+input:hover {
+  border: 1px solid red;
 }
