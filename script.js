@@ -1,6 +1,7 @@
 import { dataGet } from "./data.js";
 
 const data = dataGet();
+
 const container = document.querySelector(".container");
 const searchBar = document.querySelector(".search-form");
 
@@ -38,7 +39,7 @@ const filterCoffee = (searchedName) => {
 };
 
 dataOut(filterCoffee(""));
-// last
+
 searchBar.addEventListener("keyup", (e) => {
   const searchString = e.target.value.toLowerCase();
 
