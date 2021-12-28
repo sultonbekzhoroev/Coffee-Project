@@ -10,6 +10,7 @@ for (let i = 0; i < data.length; i++) {
   const anchor = document.createElement("a");
   const title = document.createElement("p");
   const image = document.createElement("img");
+  divOfElements.classList.add("divs-background");
   title.innerText = data[i].title;
   image.src = data[i].image;
   anchor.appendChild(title);
@@ -18,32 +19,26 @@ for (let i = 0; i < data.length; i++) {
   container.appendChild(divOfElements);
 }
 
-const filterCoffee = (searchedName) => {
-  // const filteredData = [];
+searchBar.addEventListener("keyup", (e) => {
+  const searchString = e.target.value.toLowerCase();
+  console.log(searchString);
+});
 
-  // for (let i = 0; i < data.length; i++) {
-  //     const drinkName = data[i].title.toLowerCase();
+// const filterCoffee = (searchedName) => {
+// const filteredData = [];
 
-  //     if (drinkName.includes(searchedName.toLowerCase())) {
-  //         filteredData.push(data[i]);
-  //     }
-  // }
-  // return filteredData;
+// for (let i = 0; i < data.length; i++) {
+//     const drinkName = data[i].title.toLowerCase();
 
-  const filteredData = data.filter((coffeeObject) => {
-    const drinkName = coffeeObject.title.toLowerCase();
-    return drinkName.includes(searchedName.toLowerCase());
-  });
-  return filteredData;
-};
+//     if (drinkName.includes(searchedName.toLowerCase())) {
+//         filteredData.push(data[i]);
+//     }
+// }
+// return filteredData;
 
-const handleClick = () => {
-  const searchCofeeName = searchBar.value;
-  const filteredData = filterCoffee(searchCofeeName);
-  console.log(filteredData);
-};
-
-button.addEventListener("click", handleClick);
-
-// const filteredData = filterCoffee("black")
-// console.log(filteredData)
+//   const filteredData = data.filter((coffeeObject) => {
+//     const drinkName = coffeeObject.title.toLowerCase();
+//     return drinkName.includes(searchedName.toLowerCase());
+//   });
+//   return filteredData;
+// };
