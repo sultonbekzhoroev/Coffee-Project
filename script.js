@@ -38,7 +38,7 @@ const filterCoffee = (searchedName) => {
 };
 
 dataOut(filterCoffee(""));
-
+// last
 searchBar.addEventListener("keyup", (e) => {
   const searchString = e.target.value.toLowerCase();
 
