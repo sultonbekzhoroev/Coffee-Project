@@ -14,7 +14,6 @@ function dataOut(data) {
       return `<a href="./drink.html" >
    <img src="${image}" alt="${name}" />
    <h3>${name}</h3>
-   </article>
    </a>`;
     })
     .join("");
