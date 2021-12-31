@@ -1,5 +1,5 @@
 body {
-  background-image: url(https://i.pinimg.com/originals/30/48/59/3048599abd8a04be9b05a5bd77a46d8f.jpg);
+  background-image: url(https://i.pinimg.com/736x/3e/0b/8b/3e0b8b01bf12956f727ec7220a6a4fb3.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -16,7 +16,8 @@ body {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 50px;
   text-align: center;
-  background-color: #111d4a;
+  border: 1px solid white;
+  border-radius: 10px;
   padding-top: 20px;
 }
 
@@ -86,7 +87,7 @@ input:hover {
   border: 1px solid red;
 }
 
-.divs-background {
+.divs {
   border: 1px solid black;
   border-radius: 5px;
   padding: 2px;
