@@ -86,13 +86,3 @@ input {
 input:hover {
   border: 1px solid red;
 }
-
-.divs {
-  border: 1px solid black;
-  border-radius: 5px;
-  padding: 2px;
-  color: black;
-  background-color: antiquewhite;
-  margin-top: 10px;
-  font-size: 20px;
-}
