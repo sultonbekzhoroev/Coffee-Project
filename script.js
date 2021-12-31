@@ -1,10 +1,9 @@
 import { dataGet } from "./data.js";
 
 const data = dataGet();
-
 const container = document.querySelector(".container");
 const searchBar = document.querySelector(".search-form");
-
+const button = document.querySelector(".btn");
 function dataOut(data) {
   const section = document.querySelector(".section-center");
 
@@ -14,18 +13,17 @@ function dataOut(data) {
       return `<a href="./drink.html" >
    <img src="${image}" alt="${name}" />
    <h3>${name}</h3>
+   </article>
    </a>`;
     })
     .join("");
 
   section.innerHTML = newDrinks;
 }
-
 const filterCoffee = (searchedName) => {
   const filteredData = [];
   for (let i = 0; i < data.length; i++) {
     const drinkName = data[i].title.toLowerCase();
-
     if (searchedName == "") {
       return data;
     }
@@ -41,6 +39,5 @@ dataOut(filterCoffee(""));
 
 searchBar.addEventListener("keyup", (e) => {
   const searchString = e.target.value.toLowerCase();
-
   console.log(dataOut(filterCoffee(searchString)));
 });
