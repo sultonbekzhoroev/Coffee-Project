@@ -1,181 +1,190 @@
 export const dataGet = function () {
   return [
     {
-      title: "Black",
+      title: "Dalgona Coffee",
       description:
-        "Black coffee is as simple as it gets with ground coffee beans steeped in hot water, served warm. And if you want to sound fancy, you can call black coffee by its proper name: cafe noir.",
-      ingredients: ["Coffee"],
+        "Dalgona Coffee has been a big trend in 2020 and this Korean origin whipped treat is definitely try out at least once. It might not become your favourite coffee but a fun to make and makes the perfect Instagram photos!",
+      ingredients: ["instant coffee", "sugar", "hot water", "milk","ice"],
       id: 1,
       image:
-        "https://www.healthifyme.com/blog/wp-content/uploads/2019/09/Black-coffee-feature-image.jpg",
+       "images/dalgona vaaka vol. 2.jpg",
     },
     {
-      title: "Latte",
+      title: "Affogato Mint",
       description:
-        "As the most popular coffee drink out there, the latte is comprised of a shot of espresso and steamed milk with just a touch of foam. It can be ordered plain or with a flavor shot of anything from vanilla to pumpkin spice.",
-      ingredients: ["Espresso", "Steamed Milk"],
+        "Everybody loves ice cream. And coffee. So whoever discovered combining these two is a pure genius! Affogato Mint is our favorite summer dessert. Instead of using espresso, test filter coffee or cold brew coffee.",
+      ingredients: ["cold brew concentrate", "vanilla ice cream", "mint chocolate", "fresh mint"],
       id: 2,
       image:
-        "https://www.caffesociety.co.uk/assets/recipe-images/latte-small.jpg",
+        "images/medium_Paulig_Affogato_Mint.jpg",
     },
     {
-      title: "Cappuccino",
+      title: "Almond & Honey Latte",
       description:
-        "Cappuccino is a latte made with more foam than steamed milk, often with a sprinkle of cocoa powder or cinnamon on top. Sometimes you can find variations that use cream instead of milk or ones that throw in flavor shot, as well.",
-      ingredients: ["Espresso", "Steamed Milk", "Foam"],
+        "This seasonal coffee recipe with almond milk is perfect for Christmas in a café.",
+      ingredients: ["espresso", "almond milk", "honey"],
       id: 3,
       image:
-        "https://www.thespruceeats.com/thmb/UA_NNtGiS5n6CI07kJVOMkSqYEA=/2942x2942/smart/filters:no_upscale()/how-to-make-cappuccinos-766116-hero-01-a754d567739b4ee0b209305138ecb996.jpg",
+        "images/Almond_&_Honey_Latte_0273.jpg",
     },
     {
-      title: "Americano",
+      title: "I See Coconuts",
       description:
-        "With a similar flavor to black coffee, the americano consists of an espresso shot diluted in hot water.",
-      ingredients: ["Espresso", "Hot Water"],
+        "Great cold brew coffee drink for hot summer days!",
+      ingredients: ["cold brew concentrate", "coconut water", "fresh mint", "lime", "ice"],
       id: 4,
       image:
-        "https://enjoyjava.com/wp-content/uploads/2021/08/how-to-make-an-americano.jpg",
+        "images/Coconuts_baristainstitute.jpg",
     },
     {
-      title: "Espresso",
+      title: "Honey Flat White",
       description:
-        "An espresso shot can be served solo or used as the foundation of most coffee drinks, like lattes and macchiatos.",
-      ingredients: ["1oz Espresso"],
+        "Honey instead of sugar, why not!?",
+      ingredients: ["espresso", "honey", "milk"],
       id: 5,
       image:
-        "https://www.seriouseats.com/thmb/8MBQQ3KUKhlGwwRUlPuuoR-9c7Q=/1500x1125/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__2018__06__20180613-coffee-vs-espresso-vicky-wasik-3-1500x1125-418fa2a14e7249b18040c2c34bf8569c.jpg",
+        "images/Honey_Flat_White1.jpg",
     },
     {
-      title: "Doppio",
+      title: "Glögg Au Lait",
       description:
-        "A double shot of espresso, the doppio is perfect for putting extra pep in your step.",
-      ingredients: ["2oz Espresso"],
+        "Glögg or mulled wine can be also prepared with coffee! This beverage is non-alcoholic, our own version of the traditional Christmas drink.",
+      ingredients: ["espresso", "milk", "santa maria glögg spice mix", "cane syrup"],
       id: 6,
       image:
-        "https://64.media.tumblr.com/d513fa3b4faa873684a9941d9a411864/tumblr_njpdmqFRlm1ungxeyo1_500.jpg",
+        "images/Glögi_au_lait_coffee_recipe_paulig.jpg",
     },
     {
-      title: "Cortado",
+      title: "Caramel Seasalt Latte",
       description:
-        "Like yin and yang, a cortado is the perfect balance of espresso and warm steamed milk. The milk is used to cut back on the espresso’s acidity.",
-      ingredients: ["1oz Espresso", "1oz Steamed Milk"],
+        "Perfect combination of sweet & salty!",
+      ingredients: ["espresso", "caramel sauce", "milk", "whipped cream", "sea salt"],
       id: 7,
       image:
-        "https://i.pinimg.com/736x/37/ed/43/37ed43062b93b17a728b0c28ad0aea7d.jpg",
+        "images/Caramel_Seasalt_Latte_0345.jpg",
     },
     {
-      title: "Red Eye",
+      title: "Gingerbread Latte",
       description:
-        "Named after those pesky midnight flights, a red eye can cure any tiresome morning. A full cup of hot coffee with an espresso shot mixed in, this will definitely get your heart racing.",
-      ingredients: ["Coffee", "Espresso"],
+        "Latte with cinnamon syrup is a perfect seasonal coffee recipe for Christmas.",
+      ingredients: ["espresso", "cinnamon syrup", "milk", "gingerbread spice", "gingerbread crumbs"],
       id: 8,
       image:
-        "https://thecoffeeguru.net/wp-content/uploads/2021/05/RedEyeCoffeeDrink.jpg",
+        "images/Gingerbread_Latte_0419.jpg",
     },
     {
-      title: "Galão",
+      title: "Mint Chocolate Mocha",
       description:
-        "Originating in Portugal, this hot coffee drink is closely related to the latte and cappuccino. Only difference is it contains about twice as much foamed milk, making it a lighter drink compared to the other two.",
-      ingredients: ["Espresso", "Foamed milk"],
+        "Perfect coffee recipe for dessert - tune your Café Mocha with mint and chocolate!",
+      ingredients: ["espresso", "mint chocolate syrup", "milk", "whipped cream", "crushed mint chocolate cookies"],
       id: 9,
-      image: "https://www.portugalist.com/wp-content/uploads/galao-coffee.jpg",
+      image: "images/Mint_Chocolate_Mocha_0108_0.jpg",
     },
     {
-      title: "Lungo",
+      title: "Iced Vegan Chocolatte",
       description:
-        "A lungo is a long-pull espresso. The longer the pull, the more caffeine there is and the more ounces you can enjoy.",
-      ingredients: ["Long pulled espresso"],
+        "Cold coffee drink that mixes espresso, plant-based milk & raw chocolate",
+      ingredients: ["espresso", "raw chocolate", "plant-based milk"],
       id: 10,
       image:
-        "https://www.tangycoffee.com/wp-content/uploads/2020/10/coffee-2153572_1280.jpg",
+        "images/vegan chocolate latte iced.jpg",
     },
     {
-      title: "Macchiato",
+      title: "Kick Brew",
       description:
-        "The macchiato is another espresso-based drink that has a small amount of foam on top. It’s the happy medium between a cappuccino and a doppio.",
-      ingredients: ["Espresso", "Foam"],
+        "This naturally energising chocolaty treat matches cold brew coffee with chocolate. Enough said :)",
+      ingredients: ["chocolate sauce", "cold brew concentrate", "milk", "cane syrup"],
       id: 11,
       image:
-        "https://www.thespruceeats.com/thmb/GiwOFlIXe6g8J1Z4Eem1rKtAcio=/3089x1738/smart/filters:no_upscale()/85153452-56a176765f9b58b7d0bf84dd.jpg",
+        "images/medium_Paulig_Tazza_loves_CB.jpg",
     },
     {
-      title: "Mocha",
+      title: "Ice Latte with Syrup",
       description:
-        "For all you chocolate lovers out there, you’ll fall in love with a mocha (or maybe you already have). The mocha is a chocolate espresso drink with steamed milk and foam.",
-      ingredients: ["Espresso", "Steamed Milk", "Chocolate"],
+        "A long milk + coffee beverage with ice and syrup",
+      ingredients: ["espresso", "milk", "flavoured syrup"],
       id: 12,
       image:
-        "https://www.thespruceeats.com/thmb/Fh9f4uXLQUFGtGcgymrdyl2Uq3w=/1793x1345/smart/filters:no_upscale()/mocha-4797918-05-f664d7225d5a4b14abdeacd2bf48471f.jpg",
+        "images/Ice_latte_with_syrup_B.jpg",
     },
     {
-      title: "Ristretto",
+      title: "Super Brew",
       description:
-        "Ristretto is an espresso shot. It uses less hot water which creates a sweeter flavor compared to the bitter taste of a traditional shot of espresso or a doppio.",
-      ingredients: ["Short pulled espresso"],
+        "Super way to start your morning ",
+      ingredients: ["cold brew concentrate", "almond milk", "banana", "coconut oil", "raw cacao", "pure vanilla", "sea salt"],
       id: 13,
-      image: "https://ineedcoffee.com/wp-content/uploads/2007/09/IMG_9259.jpg",
+      image: "images/Super Brew (cold brew)_a5.jpg",
     },
     {
-      title: "Flat White",
+      title: "Christmas Cold Brew",
       description:
-        "This Aussie-born drink is basically a cappuccino without the foam or chocolate sprinkle. It’s an espresso drink with steamed milk.",
-      ingredients: ["Espresso", "Steamed Milk"],
+        "This gingerbread cold brew coffee indulgence is perfect coffee drink for Christmas!",
+      ingredients: ["cold brew concentrate", "milk", "cinnamon syrup", "whipped cream"],
       id: 14,
       image:
-        "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/flat-white-d8ada0f.jpg?quality=90&resize=440,400",
+        "images/cold brew christmas.jpg",
     },
     {
-      title: "Affogato",
+      title: "Pure Brew",
       description:
-        "The affogato is an excuse to enjoy a scoop of ice cream any time of day (and any time of year in my opinion). Served with a scoop of ice cream and a shot of espresso, or two.",
-      ingredients: ["Espresso", "Ice cream"],
+        "Smoothie and a cup of joe in the same cup! ",
+      ingredients: ["cold brew concentrate", "banana", "coconut/almond milk", "blueberries", "cashew nuts", "pinch of cardemom"],
       id: 15,
       image:
-        "https://pinchandswirl.com/wp-content/uploads/2020/05/Affogato-sq.jpg",
+        "images/Pure_Brew_(cold brew).jpg",
     },
     {
-      title: "Café au Lait",
+      title: "Gingermania",
       description:
-        "Café au lait is perfect for the coffee minimalist who wants a bit more flavor. Just add a splash of warm milk to your coffee and you’re all set!",
-      ingredients: ["Coffee", "Steamed Milk"],
+        "The softness of cold brew coffee and the sweetness of ginger beer makes a perfect combination. Try it and you'll fall in love immediately!",
+      ingredients: ["cold brew concentrate", "ginger beer", "cane syrup", "orange"],
       id: 16,
       image:
-        "https://218zzz2u9z8k37r9ob41kso0-wpengine.netdna-ssl.com/wp-content/uploads/2020/12/shosuke-takahashi-f6-XQoheD50-unsplash-1024x682.jpg",
+        "images/Ginger_mania.jpg",
     },
     {
-      title: "Irish",
+      title: "Cold Brewberry",
       description:
-        "Irish coffee consists of black coffee, whiskey and sugar, topped with whipped cream.",
-      ingredients: ["Coffee", "Whiskey", "Sugar", "Cream"],
+        "Feeling like reminiscing summer? Add blueberries and lime to your cold brew and you're good to go!",
+      ingredients: ["cold brew concentrate", "soda water", "cane syrup", "lime", "blueberries"],
       id: 17,
       image:
-        "https://cocktail-society.com/wp-content/uploads/2021/11/Irish-Coffee-cocktail.jpg",
+        "images/blueberry cold brew.jpg",
     },
     {
-      title: "Guayoyo",
+      title: "Cold Brew Lemonade",
       description:
-        "Traditional venezuelan coffee prepared by filtering the ground coffee in a cone of cloth and pouring hot water on top of it. It's prefferably drinked wihout milk nor cream.",
-      ingredients: ["Coffee", "Traditional", "Hot Water"],
+        "Fresh cold brew coffee + fresh cold lemonade = double fresh & cold!",
+      ingredients: ["cold brew concentrate", "lemonade", "ice"],
       id: 18,
-      image: "https://pbs.twimg.com/media/DHwhS46XUAAfi-c.jpg",
+      image: "images/cold brew lemonade.jpg",
     },
     {
-      title: "Cortadito",
+      title: "Christmas Apple",
       description:
-        "Traditional cuban coffee method where a bit of freshly brewed coffee is mixed with sugar to create a highly sugared paste. Then add the rest of the coffee and stir adding milk until a 50/50 ratio is achieved.",
-      ingredients: ["Coffee", "Traditional", "Sugar", "Milk"],
+        "Apple, caramel, cinnamon… Christmas Apple coffee recipe is a perfect drink just by itself or also with gingerbread! Enjoy!",
+      ingredients: ["apple puree", "caramel sauce", "espresso", "cinnamon", "milk", "whipped cream"],
       id: 19,
       image:
-        "https://www.luckybelly.com/wp-content/uploads/2020/09/7-Easy-Steps-to-Make-a-Cortadito.jpg",
+        "images/Christmas_apple_coffee_recipe.jpg",
     },
     {
-      title: "Aguapanela Coffee",
+      title: "Cool Brewtini",
       description:
-        "Bring panela and coffee to a boil in a small pan for 30 minutes until panela is melted. Brew your coffee using your favorite brewing technique but add the hot aguapanela instead of hot water. Delicious sweetened coffee is ready.",
-      ingredients: ["Coffee", "Sweet", "Panela", "Traditional"],
+        "This is a perfect after work drink! Make it a cocktail or a mocktail - whatever tickles your fancy.",
+      ingredients: ["cold brew concentrate", "cranberry juice", "cane syrup", "lime"],
       id: 20,
       image:
-        "https://www.mycolombianrecipes.com/wp-content/uploads/2010/06/aguapanela.jpg",
+        "images/Cool_Brewtini_cut.jpg",
+    },
+    {
+      title: "Strawberry Dream",
+      description:
+        "Treat yourself with this sweet coffee drink with white chocolate.",
+      ingredients: ["espresso", "strawberry syrup", "white chocolate", "milk"],
+      id: 21,
+      image:
+        "images/medium_Paulig_Strawberry_Dream.jpg",
     },
   ];
 };
