@@ -1,9 +1,8 @@
 body {
-  background-image: url(https://i.pinimg.com/736x/3e/0b/8b/3e0b8b01bf12956f727ec7220a6a4fb3.jpg);
+  background-image: url(https://wallpaperaccess.com/full/1430348.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #111d4a;
   text-align: center;
   font-family: Tahoma;
   position: relative;
@@ -51,7 +50,7 @@ img {
 
 a {
   text-decoration: none;
-  color: yellow;
+  color: white;
   font-size: 20px;
   font-weight: bold;
 }
@@ -63,7 +62,7 @@ h2 {
 
 h3 {
   font-size: 20px;
-  color: yellow;
+  color: white;
 }
 
 img:hover {
