@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lemonada:wght@300&family=Licorice&family=Luxurious+Roman&family=Roboto+Mono:wght@300&display=swap');
 body {
-  background-image: url(https://wallpaperaccess.com/full/1430348.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #e9f2d3;
   text-align: center;
-  font-family: Tahoma;
+  font-family: 'Roboto Mono', monospace; sans-serif;
   position: relative;
 }
 .section-center {
@@ -15,8 +16,6 @@ body {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 50px;
   text-align: center;
-  border: 1px solid white;
-  border-radius: 10px;
   padding-top: 20px;
 }
 
@@ -25,16 +24,18 @@ body {
 }
 header {
   position: fixed;
+  justify-content: center;
+  background-color: #e9f2d3;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   display: flex;
-  justify-content: space-between;
-  height: 100px;
+  height: 50px;
 }
 #header_menu {
   display: grid;
+  align-items: center;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 40px;
 }
@@ -44,25 +45,40 @@ li {
   margin-left: 30px;
 }
 img {
-  width: 140px;
-  height: 140px;
+  width: 220px;
+  height: 150px; 
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 a {
   text-decoration: none;
-  color: white;
+  color: #300000;
   font-size: 20px;
   font-weight: bold;
 }
+a:hover { 
+  color: #977171;
+}
 
 h2 {
-  color: red;
+  font-size: 14px;
+  color: #2c1717;
   margin-top: 100px;
+  margin-left: 250px;
+  margin-right: 250px;
 }
 
 h3 {
+  margin-top: 3px;
+  font-size: 18px;
+  color: #300000;
+}
+.iframe{
+  margin-top: 30px;
+  margin-bottom: 5px;
   font-size: 20px;
-  color: white;
+  color: #300000;
 }
 
 img:hover {
@@ -82,6 +98,13 @@ input {
   border-radius: 10px;
 }
 
-input:hover {
-  border: 1px solid red;
+
+.logo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 200px;
+  height: 200px;
 }
