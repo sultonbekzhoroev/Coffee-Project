@@ -19,6 +19,11 @@ body {
   padding-top: 20px;
 }
 
+.container {
+  background-color: beige;
+}
+
+
 .form {
   display: inline;
 }
