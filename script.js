@@ -10,7 +10,7 @@ function dataOut(data) {
   const newDrinks = data
     .map((drink) => {
       const { title: name, image: image } = drink;
-      return `<a href="./drink.html" >
+      return `<a href="./link.html" >
    <img src="${image}" alt="${name}" />
    <h3>${name}</h3>
    </article>
