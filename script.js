@@ -8,11 +8,18 @@ const button = document.querySelector(".btn");
 function dataOut(data) {
     const section = document.querySelector(".section-center");
 
+/* anara*/
     const newDrinks = data
         .map((drink) => {
             const { title: name, image: image } = drink;
             return `<a href="./drink.html" >
             <article>
+
+  const newDrinks = data
+    .map((drink) => {
+      const { title: name, image: image } = drink;
+      return `<a href="./link.html" >
+
    <img src="${image}" alt="${name}" />
    <h3>${name}</h3>
    </article>
@@ -45,6 +52,7 @@ searchBar.addEventListener("keyup", (e) => {
 
 });
 
+/*anara*/
 /* responsive */
 
 const navToggle = document.querySelector(".nav-toggle");
@@ -101,3 +109,9 @@ navToggle.addEventListener("click", () => {
         headerMenu.style.top = "-100%";
 
     }); */
+
+window.addEventListener('load', function(){
+  const loadWrapper = this.document.querySelector('.load-wrapper');
+  loadWrapper.parentElement.removeChild(loadWrapper);
+})
+
