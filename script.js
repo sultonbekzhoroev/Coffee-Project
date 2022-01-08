@@ -4,6 +4,7 @@ const data = dataGet();
 const container = document.querySelector(".container");
 const searchBar = document.querySelector(".search-form");
 const button = document.querySelector(".btn");
+
 function dataOut(data) {
   const section = document.querySelector(".section-center");
 
@@ -39,5 +40,4 @@ dataOut(filterCoffee(""));
 
 searchBar.addEventListener("keyup", (e) => {
   const searchString = e.target.value.toLowerCase();
-  console.log(dataOut(filterCoffee(searchString)));
 });
