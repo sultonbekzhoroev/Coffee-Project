@@ -1,4 +1,8 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lemonada:wght@300&family=Licorice&family=Luxurious+Roman&family=Roboto+Mono:wght@300&display=swap');
+
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lemonada:wght@300&family=Licorice&family=Luxurious+Roman&family=Roboto+Mono:wght@300&display=swap");
 
 body {
   background-position: center;
@@ -6,8 +10,12 @@ body {
   background-size: cover;
   background-color: #e9f2d3;
   text-align: center;
+
   font-family: 'Roboto Mono', monospace;
   sans-serif;
+
+  font-family: "Roboto Mono", monospace, sans-serif;
+
   position: relative;
   margin: 0;
   padding: 0;
@@ -27,7 +35,6 @@ body {
 .container {
   background-color: beige;
 }
-
 
 .form {
   display: inline;
@@ -113,7 +120,6 @@ input {
   border-radius: 10px;
 }
 
-
 .logo {
   position: fixed;
   top: 0;
@@ -123,6 +129,7 @@ input {
   width: 200px;
   height: 200px;
 }
+
 
 .load-wrapper {
   width: 100%;
@@ -176,3 +183,18 @@ input {
   top: 2px;
   border-radius: 0 25px 80px 0;
 }
+
+footer {
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.footer_info_first {
+  background-color: #977171;
+}
+
+.footer_second_info {
+  background-color: aqua;
+}
+
