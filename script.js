@@ -41,8 +41,3 @@ searchBar.addEventListener("keyup", (e) => {
   const searchString = e.target.value.toLowerCase();
   console.log(dataOut(filterCoffee(searchString)));
 });
-
-window.addEventListener('load', function(){
-  const loadWrapper = this.document.querySelector('.load-wrapper');
-  loadWrapper.parentElement.removeChild(loadWrapper);
-})

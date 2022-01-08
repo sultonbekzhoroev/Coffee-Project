@@ -1,18 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lemonada:wght@300&family=Licorice&family=Luxurious+Roman&family=Roboto+Mono:wght@300&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lemonada:wght@300&family=Licorice&family=Luxurious+Roman&family=Roboto+Mono:wght@300&display=swap");
 body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #e9f2d3;
   text-align: center;
-  font-family: 'Roboto Mono', monospace;
-  sans-serif;
+  font-family: "Roboto Mono", monospace, sans-serif;
   position: relative;
-  margin: 0;
-  padding: 0;
 }
-
 .section-center {
   margin: auto;
   margin-top: 10px;
@@ -28,11 +23,9 @@ body {
   background-color: beige;
 }
 
-
 .form {
   display: inline;
 }
-
 header {
   position: fixed;
   justify-content: center;
@@ -44,7 +37,6 @@ header {
   display: flex;
   height: 50px;
 }
-
 #header_menu {
   display: grid;
   align-items: center;
@@ -56,7 +48,6 @@ li {
   list-style: none;
   margin-left: 30px;
 }
-
 img {
   width: 220px;
   height: 150px;
@@ -70,7 +61,6 @@ a {
   font-size: 20px;
   font-weight: bold;
 }
-
 a:hover {
   color: #977171;
 }
@@ -88,7 +78,6 @@ h3 {
   font-size: 18px;
   color: #300000;
 }
-
 .iframe {
   margin-top: 30px;
   margin-bottom: 5px;
@@ -113,7 +102,6 @@ input {
   border-radius: 10px;
 }
 
-
 .logo {
   position: fixed;
   top: 0;
@@ -123,6 +111,7 @@ input {
   width: 200px;
   height: 200px;
 }
+
 /* animation style */
 .load-wrapper {
   width: 100%;
@@ -175,3 +164,4 @@ input {
   top: 2px;
   border-radius: 0 25px 80px 0;
 }
+
