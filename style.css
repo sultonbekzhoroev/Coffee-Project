@@ -111,17 +111,3 @@ input {
   width: 200px;
   height: 200px;
 }
-
-footer {
-  background-color: white;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.footer_info_first {
-  background-color: #977171;
-}
-
-.footer_second_info {
-  background-color: aqua;
-}
