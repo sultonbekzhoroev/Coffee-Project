@@ -1,9 +1,8 @@
 import { dataGet } from "./data.js";
 
 const data = dataGet();
-const container = document.querySelector(".container");
 const searchBar = document.querySelector(".search-form");
-const button = document.querySelector(".btn");
+
 function dataOut(data) {
   const section = document.querySelector(".section-center");
 
