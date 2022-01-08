@@ -6,9 +6,6 @@
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 50px;
   text-align: center;
-  border: 1px solid white;
-  border-radius: 10px;
-  padding-top: 20px;
 }
 
 .form {
