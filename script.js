@@ -44,6 +44,5 @@ searchBar.addEventListener("keyup", (e) => {
 
 window.addEventListener('load', function(){
   const loadWrapper = this.document.querySelector('.load-wrapper');
-  // loadWrapper.style.display = 'none';
   loadWrapper.parentElement.removeChild(loadWrapper);
 })
