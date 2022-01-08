@@ -1,13 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lemonada:wght@300&family=Licorice&family=Luxurious+Roman&family=Roboto+Mono:wght@300&display=swap');
+
 body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #e9f2d3;
   text-align: center;
-  font-family: 'Roboto Mono', monospace; sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  sans-serif;
   position: relative;
+  margin: 0;
+  padding: 0;
 }
+
 .section-center {
   margin: auto;
   margin-top: 10px;
@@ -27,6 +32,7 @@ body {
 .form {
   display: inline;
 }
+
 header {
   position: fixed;
   justify-content: center;
@@ -38,6 +44,7 @@ header {
   display: flex;
   height: 50px;
 }
+
 #header_menu {
   display: grid;
   align-items: center;
@@ -49,9 +56,10 @@ li {
   list-style: none;
   margin-left: 30px;
 }
+
 img {
   width: 220px;
-  height: 150px; 
+  height: 150px;
   object-fit: cover;
   border-radius: 10px;
 }
@@ -62,7 +70,8 @@ a {
   font-size: 20px;
   font-weight: bold;
 }
-a:hover { 
+
+a:hover {
   color: #977171;
 }
 
@@ -79,7 +88,8 @@ h3 {
   font-size: 18px;
   color: #300000;
 }
-.iframe{
+
+.iframe {
   margin-top: 30px;
   margin-bottom: 5px;
   font-size: 20px;
@@ -112,4 +122,57 @@ input {
   bottom: 0;
   width: 200px;
   height: 200px;
+}
+
+.load-wrapper {
+  width: 100%;
+  height: 100vh;
+  background-color: #efb54a;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+
+}
+
+.cup {
+  height: 140px;
+  width: 180px;
+  border: 6px solid #efb54a;
+  top: 40%;
+  left: 40%;
+  border-radius: 0 0 70px 70px;
+  position: absolute;
+  background: url(./images/coffee.png);
+  box-shadow: 0 0 0 6px white;
+  background-repeat: repeat-x;
+  background-position: 0 140px;
+  animation: fill 2.5s infinite;
+}
+@keyframes fill{
+  0%{
+    background-position: 0 140px;
+  }
+  20%{
+    background-position: -450px 100px
+  }
+  40%{
+    background-position: -900px 50px
+  }
+  80%{
+    background-position: -1350px -40px
+  }
+  100%{
+    background-position: 0px 140px
+  }
+}
+.handle{
+  height: 70px;
+  width: 40px;
+  background-color: transparent;
+  border: 6px solid white;
+  position: relative;
+  left: 186px;
+  top: 2px;
+  border-radius: 0 25px 80px 0;
 }
