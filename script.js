@@ -45,6 +45,51 @@ searchBar.addEventListener("keyup", (e) => {
     console.log(dataOut(filterCoffee(searchString)));
 });
 
+
+window.addEventListener('load', function(){
+  const loadWrapper = this.document.querySelector('.load-wrapper');
+  loadWrapper.parentElement.removeChild(loadWrapper);
+})
+
+
+// Получить модальный
+var modal = document.getElementById("myModal");
+
+// Получить кнопку, которая открывает модальный
+var btn = document.getElementById("myBtn");
+
+// Получить элемент <span>, который закрывает модальный
+var span = document.getElementsByClassName("close")[0];
+
+// //store submit button
+// let register = document.querySelector(".registerbtn");
+
+// //store message after submit
+// let message = document.querySelector("#response");
+
+// Когда пользователь нажимает на кнопку, откройте модальный
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// Когда пользователь нажимает на <span> (x), закройте модальное окно
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// Когда пользователь щелкает в любом месте за пределами модального, закройте его
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+// register.onclick = function (event) {
+//   modal.style.display = "block";
+//   message.style.display ="block";
+// }
+
+
 window.addEventListener("load", function() {
     const loadWrapper = this.document.querySelector(".load-wrapper");
     loadWrapper.parentElement.removeChild(loadWrapper);

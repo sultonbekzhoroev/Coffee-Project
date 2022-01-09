@@ -19,6 +19,103 @@
     </div>
 
     <div class="main-wrap">
+      
+      <header>
+      <ul id="header_menu">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">MENU</a></li>
+        <li><a href="#">OUR ROASTER</a></li>
+        <li><a href="#">CONTACT US</a></li>
+      </ul>
+
+      <!-- Триггер/Открыть модальный -->
+      <button id="myBtn">Gift</button>
+          
+      <!-- Модальный -->
+      <div id="myModal" class="modal">
+
+        <!-- Модальное содержание -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+        
+            <form id="form">
+              <p class="registP">Register and get a gift from us</p>
+  
+              <label class="modform" for="name"><b>Name</b></label>
+              <input class="modinput" type="text" placeholder="Enter Name" name="name" id="form-name" required>
+  
+              <label class="modform" for="last-name"><b>Last Name</b></label>
+              <input class="modinput" type="text" placeholder="Enter Last Name" name="last-name" id="form-lastname" required>
+  
+              <label class="modform" for="email"><b>Email</b></label>
+              <input class="modinput" type="email" placeholder="Enter Email" name="email" id="email" 
+              required>
+
+              <div id="response">You have sucessfully registered! We will get in touch with you via email to send your gift to you!</div>
+  
+              <button type="submit" class="registerbtn">Register</button>
+  
+            </form>
+          </div>
+      </div>
+
+
+    </header>
+    <div class="logo">
+      <img class="logo" src="images/LOGO.png" alt="" />
+    </div>
+    <h2>
+      Find a new coffee recipe and get inspiration to your daily work or go back
+      to good old classics.<br />
+      We want to spread the love for coffee so feel free to use them at your
+      work or at home! <br />
+      Enjoy!
+    </h2>
+    <form class="form">
+      <input
+      type="text"
+      placeholder="search your favorite coffee..."
+      name="drink"
+      class="search-form"
+      />
+    </form>
+    <div class="section-center"></div>
+    <div class="container">
+      <h3 class="iframe">
+        9 Reasons Why (the Right Amount of) Coffee Is Good for You
+      </h3>
+      <iframe
+        src="https://www.hopkinsmedicine.org/health/wellness-and-prevention/9-reasons-why-the-right-amount-of-coffee-is-good-for-you"
+        frameborder="0"
+        width="60%"
+        height="500px"
+      ></iframe>
+      <footer>
+        <div class="footer_info_first">
+          <h3>Quick links</h3>
+          <div class="footer_first_links">
+            <a href="#">Manage Your Subscription</a>
+            <a href="#">FAQ</a>
+            <a href="#">Gift Card</a>
+            <a href="#">My Account</a>
+            <a href="#"
+              >A Bold Journey to Where Specialty Coffee Meets Community
+              Impact</a
+            >
+            <a href="#">Terms of Service</a>
+            <a href="#">Refund policy</a>
+            <a href="#">Accessibility Statement</a>
+          </div>
+          </div>
+          <div class="footer_second_info">
+            <h3>Product Availability</h3>
+            <p>
+              Available in over 5,600 retail locations. Also served in select
+              independently owned restaurants, and coffee shops across the US.
+              Check Store Locator to find one near you.
+            </p>
+          </div>
+
 
 
         <header>
@@ -62,10 +159,14 @@
                 9 Reasons Why (the Right Amount of) Coffee Is Good for You
             </h3>
             <iframe src="https://www.hopkinsmedicine.org/health/wellness-and-prevention/9-reasons-why-the-right-amount-of-coffee-is-good-for-you" frameborder="0" width="60%" height="500px"></iframe>
+
         </div>
     </div>
 
     <script src="./script.js" type="module"></script>
-</body>
 
-</html>
+
+  </body>
+  </html>
+  
+
