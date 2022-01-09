@@ -49,16 +49,16 @@ window.addEventListener('load', function(){
 
 
 // Получить модальный
-var modal = document.getElementById("myModal");
+let modal = document.getElementById("myModal");
 
 // Получить кнопку, которая открывает модальный
-var btn = document.getElementById("myBtn");
+let btn = document.getElementById("myBtn");
 
 // Получить элемент <span>, который закрывает модальный
-var span = document.getElementsByClassName("close")[0];
+let span = document.getElementsByClassName("close")[0];
 
 // //store submit button
-// let register = document.querySelector(".registerbtn");
+let register = document.querySelector(".registerbtn");
 
 // //store message after submit
 // let message = document.querySelector("#response");
@@ -80,8 +80,4 @@ window.onclick = function(event) {
   }
 }
 
-// register.onclick = function (event) {
-//   modal.style.display = "block";
-//   message.style.display ="block";
-// }
 
