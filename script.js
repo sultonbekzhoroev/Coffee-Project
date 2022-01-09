@@ -1,4 +1,5 @@
 import { dataGet } from "./data.js";
+console.log("script.js");
 
 const data = dataGet();
 const searchBar = document.querySelector(".search-form");
@@ -10,15 +11,15 @@ function dataOut(data) {
 
   const newDrinks = data
     .map((drink) => {
-      const { title: name, image: image } = drink;
-      return `<a href="./link.html" >
-   <img src="${image}" alt="${name}" />
-   <h3>${name}</h3>
-   </article>
-   </a>`;
+      const { title: name, image: image, id: id } = drink;
+      return `<a class = "items">
+   <img src="${image}" alt="${name}" id = "${id}"/>
+    <h3>${name}</h3>
+    </article>
+    </a>`;
     })
     .join("");
-
+  // href="./link.html"
   section.innerHTML = newDrinks;
 }
 const filterCoffee = (searchedName) => {
@@ -70,8 +71,8 @@ function displayMenuButtons() {
   const categoryBtns = categories
     .map(function (category) {
       return `<button type="button" class="filter-btn" data-id=${category}>
-          ${category}
-        </button>`;
+            ${category}
+          </button>`;
     })
     .join("");
 
@@ -104,6 +105,20 @@ const section = document.querySelector(".section-center");
 const h2 = document.querySelector("h2");
 const ul = document.querySelector("ul");
 const logoImg = document.querySelector("img");
+const items = document.querySelectorAll(".items");
+
+if (items && items.length) {
+  section.addEventListener("click", (e) => {
+    const index = data.findIndex((elem, index, arr) => {
+      return elem.id === parseInt(e.target.id, 16);
+    });
+    if (index !== -1) {
+      console.log(data[index]);
+      const w = window.open("http://127.0.0.1:5503/link.html", "");
+      w.data = index;
+    }
+  });
+}
 
 navToggle.addEventListener("click", () => {
   if (ul.classList.contains("show-header-menu")) {
