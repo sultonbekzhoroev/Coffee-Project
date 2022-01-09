@@ -1,9 +1,10 @@
 import { dataGet } from "./data.js";
 
 const data = dataGet();
-const container = document.querySelector(".container");
 const searchBar = document.querySelector(".search-form");
+
 const button = document.querySelector(".btn");
+
 function dataOut(data) {
   const section = document.querySelector(".section-center");
 
@@ -42,9 +43,10 @@ searchBar.addEventListener("keyup", (e) => {
   console.log(dataOut(filterCoffee(searchString)));
 });
 
-window.addEventListener('load', function(){
-  const loadWrapper = this.document.querySelector('.load-wrapper');
+window.addEventListener("load", function () {
+  const loadWrapper = this.document.querySelector(".load-wrapper");
   loadWrapper.parentElement.removeChild(loadWrapper);
+
 })
 
 
@@ -59,25 +61,88 @@ let span = document.getElementsByClassName("close")[0];
 
 // //store submit button
 let register = document.querySelector(".registerbtn");
+=======
+});
 
-// //store message after submit
-// let message = document.querySelector("#response");
+/* filter btn */
 
-// Когда пользователь нажимает на кнопку, откройте модальный
-btn.onclick = function() {
-  modal.style.display = "block";
+
+const btnContainer = document.querySelector(".btn-container");
+// display all items when page loads
+window.addEventListener("DOMContentLoaded", function () {
+  dataOut(data);
+  displayMenuButtons();
+});
+
+function displayMenuButtons() {
+  const categories = data.reduce(
+    function (values, item) {
+      if (!values.includes(item.category)) {
+        values.push(item.category);
+      }
+      return values;
+    },
+    ["all"]
+  );
+  const categoryBtns = categories
+    .map(function (category) {
+      return `<button type="button" class="filter-btn" data-id=${category}>
+          ${category}
+        </button>`;
+    })
+    .join("");
+
+  btnContainer.innerHTML = categoryBtns;
+  const filterBtns = btnContainer.querySelectorAll(".filter-btn");
+  console.log(filterBtns);
+
+  filterBtns.forEach(function (btn) {
+    btn.addEventListener("click", function (e) {
+      // console.log(e.currentTarget.dataset);
+      const category = e.currentTarget.dataset.id;
+      const menuCategory = data.filter(function (data) {
+        // console.log(menuItem.category);
+        if (data.category === category) {
+          return data;
+        }
+      });
+      if (category === "all") {
+        dataOut(data);
+      } else {
+        dataOut(menuCategory);
+      }
+    });
+  });
 }
 
-// Когда пользователь нажимает на <span> (x), закройте модальное окно
-span.onclick = function() {
-  modal.style.display = "none";
-}
+const navToggle = document.querySelector(".nav-toggle");
+const form = document.querySelector(".form");
+const section = document.querySelector(".section-center");
+const h2 = document.querySelector("h2");
+const ul = document.querySelector("ul");
+const logoImg = document.querySelector("img");
 
-// Когда пользователь щелкает в любом месте за пределами модального, закройте его
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+navToggle.addEventListener("click", () => {
+  if (ul.classList.contains("show-header-menu")) {
+    ul.classList.remove("show-header-menu");
+    section.style.display = "block";
+    section.style.height = "auto";
+    ul.style.display = "none";
+    form.style.paddingTop = "50px";
+    h2.style.display = "block";
+  } else {
+    ul.classList.add("show-header-menu");
+    ul.style.paddingTop = "300px";
+
+    h2.style.display = "none";
+    ul.style.display = "block";
+    ul.style.height = "100vh";
+    section.style.display = "none";
   }
+
 }
 
+
+
+});
 

@@ -1,23 +1,11 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lemonada:wght@300&family=Licorice&family=Luxurious+Roman&family=Roboto+Mono:wght@300&display=swap');
-
-
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lemonada:wght@300&family=Licorice&family=Luxurious+Roman&family=Roboto+Mono:wght@300&display=swap");
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab:wght@700&display=swap');
-
 body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #e9f2d3;
   text-align: center;
-
-  font-family: 'Roboto Mono', monospace;
-  sans-serif;
-
   font-family: "Roboto Mono", monospace, sans-serif;
-
   position: relative;
   margin: 0;
   padding: 0;
@@ -132,6 +120,7 @@ input {
   height: 200px;
 }
 
+/* animation style */
 
 .load-wrapper {
   width: 100%;
@@ -141,7 +130,6 @@ input {
   top: 0;
   left: 0;
   z-index: 5;
-
 }
 
 .cup {
@@ -158,24 +146,26 @@ input {
   background-position: 0 140px;
   animation: fill 2.5s infinite;
 }
-@keyframes fill{
-  0%{
+
+@keyframes fill {
+  0% {
     background-position: 0 140px;
   }
-  20%{
-    background-position: -450px 100px
+  20% {
+    background-position: -450px 100px;
   }
-  40%{
-    background-position: -900px 50px
+  40% {
+    background-position: -900px 50px;
   }
-  80%{
-    background-position: -1350px -40px
+  80% {
+    background-position: -1350px -40px;
   }
-  100%{
-    background-position: 0px 140px
+  100% {
+    background-position: 0px 140px;
   }
 }
-.handle{
+
+.handle {
   height: 70px;
   width: 40px;
   background-color: transparent;
@@ -186,113 +176,144 @@ input {
   border-radius: 0 25px 80px 0;
 }
 
-footer {
-  background-color: white;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
+/* filter btn */
 
-.footer_info_first {
-  background-color: #977171;
-}
-
-.footer_second_info {
-  background-color: aqua;
-}
-
-/* Модальный (фон) */
-.modal {
-  display: none; /* Скрыто по умолчанию */
-  position: fixed; /* Оставаться на месте */
-  z-index: 1; /* Сидеть на вершине */
-  left: 0;
-  top: 0;
-  width: 100%; /* Полная ширина */
-  height: 100%; /* Полная высота */
-  overflow: auto; /* Включите прокрутку, если это необходимо */
-  background-color: rgb(0,0,0); /* Цвет запасной вариант */
-  background-color: rgba(0,0,0,0.4); /* Черный с непрозрачностью */
-}
-
-/* Модальное содержание/коробка */
-.modal-content {
-  background-image: url(https://images.unsplash.com/photo-1453614512568-c4024d13c247?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y29mZmVlJTIwc2hvcHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
-  background-size: cover;
-  background-position: center;
-  opacity: 0.9;
-  margin: 15% auto; /* 15% сверху и по центру */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 60%; /* Может быть больше или меньше, в зависимости от размера экрана */
-  height: 40%;
-  border-radius: 20px;
-}
-
-/* Кнопка закрытия */
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
+.btn {
+  text-transform: uppercase;
+  background: transparent;
+  color: #300000;
+  padding: 0.375rem 0.75rem;
+  letter-spacing: 0.25rem;
+  display: inline-block;
+  transition: all 0.3s linear;
+  font-size: 0.875rem;
+  border: 2px solid #300000;
   cursor: pointer;
-  transition: all 1s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
 }
 
-/* style of gift button */
-#myBtn {
-    width: 100px;
-    padding: 10px;
-    font-size: 18px;
-    text-transform: uppercase;
-    border-radius: 20px;
-    margin-left: 60px;
-    margin-top: 5px;
-    background: transparent;
+.btn:hover {
+  color: #fff;
+  background: #300000;
 }
 
-.registerbtn {
-  margin-top: 10px;
-  padding: 5px 10px;
-  border-radius: 5px;
+.btn-container {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
 }
 
-.registP {
-  color: whitesmoke;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  font-size: 26px;
-  -webkit-text-stroke-width: 0.9px;
-  -webkit-text-stroke-color: black;
+.filter-btn {
+  background: transparent;
+  border-color: #2c1717;
+  font-size: 1rem;
+  text-transform: capitalize;
+  margin: 0 0.5rem;
+  letter-spacing: 1px;
+  border-radius: 0.5rem;
+  padding: 0.375rem 0.75rem;
+  color: #300000;
+  cursor: pointer;
+  transition: all 0.3s linear;
 }
 
-.modform {
-  font-size: 20px;
-  font-weight: 900;
-  font-family: Arial, Helvetica, sans-serif;
-  margin-top: 10px;
-  color: whitesmoke;
-  -webkit-text-stroke-width: 0.9px;
-  -webkit-text-stroke-color: black;
+.filter-btn:hover {
+  background: #2c1717;
+  color: #fff;
 }
 
-#response {
+.nav-toggle {
   display: none;
 }
 
+/* responsive */
 
-/* responsiveness of modal form */
-
-@media (max-width: 700px) {
-  #myModal{
-    display: flex;
-    flex-direction: column;
+@media (max-width: 800px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
-
+  #header_menu {
+    height: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 3;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+  }
+  .logo-wrapper {
+    width: 100%;
+    z-index: 7;
+    position: relative;
+  }
+  .logo img {
+    z-index: 7;
+  }
+  .logo-wrapper .nav-toggle {
+    right: 30px;
+    top: 30px;
+    position: absolute;
+  }
+  .nav-toggle {
+    font-size: 1.5rem;
+    color: #300000;
+    background: transparent;
+    border-color: transparent;
+    transition: all 0.3s linear;
+    cursor: pointer;
+    z-index: 12;
+    display: block;
+  }
+  body {
+    height: auto;
+  }
+  h2 {
+    margin: 15px 30px 15px;
+    width: 90%;
+    text-align: center;
+    padding-left: 10px;
+  }
+  .search-form {
+    width: 50%;
+    border: none;
+    padding: 5px;
+  }
+  .section-center,
+  .container h3,
+  iframe {
+    display: block;
+    height: auto;
+    border: none;
+    padding: 30px;
+  }
+  .section-center a {
+    margin: 20px;
+  }
+  .container h3 {
+    margin: auto;
+    padding: 50px;
+  }
+  iframe {
+    width: 95%;
+  }
+  .show-header-menu {
+    padding: 2rem;
+    z-index: 6;
+    height: 100vh;
+    background-color: #ffc75f;
+  }
+  .show-header-menu li a {
+    color: #300000;
+  }
+  header #header_menu li a:hover {
+    background: none;
+    font-size: 1.5rem;
+  }
 }
-
