@@ -5,52 +5,48 @@ const searchBar = document.querySelector(".search-form");
 
 const button = document.querySelector(".btn");
 
-
-
 function dataOut(data) {
-    const section = document.querySelector(".section-center");
+  const section = document.querySelector(".section-center");
 
-    const newDrinks = data
-        .map((drink) => {
-            const { title: name, image: image } = drink;
-            return `<a href="./link.html" >
+  const newDrinks = data
+    .map((drink) => {
+      const { title: name, image: image } = drink;
+      return `<a href="./link.html" >
    <img src="${image}" alt="${name}" />
    <h3>${name}</h3>
    </article>
    </a>`;
-        })
-        .join("");
+    })
+    .join("");
 
-    section.innerHTML = newDrinks;
+  section.innerHTML = newDrinks;
 }
 const filterCoffee = (searchedName) => {
-    const filteredData = [];
-    for (let i = 0; i < data.length; i++) {
-        const drinkName = data[i].title.toLowerCase();
-        if (searchedName == "") {
-            return data;
-        }
-
-        if (drinkName.includes(searchedName.toLowerCase())) {
-            filteredData.push(data[i]);
-        }
+  const filteredData = [];
+  for (let i = 0; i < data.length; i++) {
+    const drinkName = data[i].title.toLowerCase();
+    if (searchedName == "") {
+      return data;
     }
-    return filteredData;
+
+    if (drinkName.includes(searchedName.toLowerCase())) {
+      filteredData.push(data[i]);
+    }
+  }
+  return filteredData;
 };
 
 dataOut(filterCoffee(""));
 
 searchBar.addEventListener("keyup", (e) => {
-    const searchString = e.target.value.toLowerCase();
-    console.log(dataOut(filterCoffee(searchString)));
+  const searchString = e.target.value.toLowerCase();
+  console.log(dataOut(filterCoffee(searchString)));
 });
 
-
-window.addEventListener('load', function(){
-  const loadWrapper = this.document.querySelector('.load-wrapper');
+window.addEventListener("load", function () {
+  const loadWrapper = this.document.querySelector(".load-wrapper");
   loadWrapper.parentElement.removeChild(loadWrapper);
-})
-
+});
 
 // Получить модальный
 var modal = document.getElementById("myModal");
@@ -68,120 +64,104 @@ var span = document.getElementsByClassName("close")[0];
 // let message = document.querySelector("#response");
 
 // Когда пользователь нажимает на кнопку, откройте модальный
-btn.onclick = function() {
+btn.onclick = function () {
   modal.style.display = "block";
-}
+};
 
 // Когда пользователь нажимает на <span> (x), закройте модальное окно
-span.onclick = function() {
+span.onclick = function () {
   modal.style.display = "none";
-}
+};
 
 // Когда пользователь щелкает в любом месте за пределами модального, закройте его
-window.onclick = function(event) {
+window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
-}
+};
 
 // register.onclick = function (event) {
 //   modal.style.display = "block";
 //   message.style.display ="block";
 // }
 
-
-window.addEventListener("load", function() {
-    const loadWrapper = this.document.querySelector(".load-wrapper");
-    loadWrapper.parentElement.removeChild(loadWrapper);
+window.addEventListener("load", function () {
+  const loadWrapper = this.document.querySelector(".load-wrapper");
+  loadWrapper.parentElement.removeChild(loadWrapper);
 });
-
 
 /* filter btn */
 
-
 const btnContainer = document.querySelector(".btn-container");
 // display all items when page loads
-window.addEventListener("DOMContentLoaded", function() {
-    dataOut(data);
-    displayMenuButtons();
+window.addEventListener("DOMContentLoaded", function () {
+  dataOut(data);
+  displayMenuButtons();
 });
 
-
 function displayMenuButtons() {
-    const categories = data.reduce(
-        function(values, item) {
-            if (!values.includes(item.category)) {
-                values.push(item.category);
-            }
-            return values;
-        }, ["all"]
-    );
-    const categoryBtns = categories
-        .map(function(category) {
-            return `<button type="button" class="filter-btn" data-id=${category}>
+  const categories = data.reduce(
+    function (values, item) {
+      if (!values.includes(item.category)) {
+        values.push(item.category);
+      }
+      return values;
+    },
+    ["all"]
+  );
+  const categoryBtns = categories
+    .map(function (category) {
+      return `<button type="button" class="filter-btn" data-id=${category}>
           ${category}
         </button>`;
-        })
-        .join("");
+    })
+    .join("");
 
-    btnContainer.innerHTML = categoryBtns;
-    const filterBtns = btnContainer.querySelectorAll(".filter-btn");
-    console.log(filterBtns);
+  btnContainer.innerHTML = categoryBtns;
+  const filterBtns = btnContainer.querySelectorAll(".filter-btn");
+  console.log(filterBtns);
 
-    filterBtns.forEach(function(btn) {
-        btn.addEventListener("click", function(e) {
-            // console.log(e.currentTarget.dataset);
-            const category = e.currentTarget.dataset.id;
-            const menuCategory = data.filter(function(data) {
-                // console.log(menuItem.category);
-                if (data.category === category) {
-                    return data;
-                }
-            });
-            if (category === "all") {
-                dataOut(data);
-            } else {
-                dataOut(menuCategory);
-            }
-        });
+  filterBtns.forEach(function (btn) {
+    btn.addEventListener("click", function (e) {
+      // console.log(e.currentTarget.dataset);
+      const category = e.currentTarget.dataset.id;
+      const menuCategory = data.filter(function (data) {
+        // console.log(menuItem.category);
+        if (data.category === category) {
+          return data;
+        }
+      });
+      if (category === "all") {
+        dataOut(data);
+      } else {
+        dataOut(menuCategory);
+      }
     });
+  });
 }
 
 const navToggle = document.querySelector(".nav-toggle");
 const form = document.querySelector(".form");
 const section = document.querySelector(".section-center");
 const h2 = document.querySelector("h2");
-const ul = document.querySelector("ul")
-const logoImg = document.querySelector("img")
+const ul = document.querySelector("ul");
+const logoImg = document.querySelector("img");
 
 navToggle.addEventListener("click", () => {
+  if (ul.classList.contains("show-header-menu")) {
+    ul.classList.remove("show-header-menu");
+    section.style.display = "block";
+    section.style.height = "auto";
+    ul.style.display = "none";
+    form.style.paddingTop = "50px";
+    h2.style.display = "block";
+  } else {
+    ul.classList.add("show-header-menu");
+    ul.style.paddingTop = "300px";
 
-
-    if (ul.classList.contains("show-header-menu")) {
-        ul.classList.remove("show-header-menu");
-        section.style.display = "block";
-        section.style.height = "auto";
-        ul.style.display = "none";
-        form.style.paddingTop = "50px";
-        h2.style.display = "block";
-
-
-
-
-
-    } else {
-        ul.classList.add("show-header-menu")
-        ul.style.paddingTop = "300px";
-
-        h2.style.display = "none";
-        ul.style.display = "block";
-        ul.style.height = "100vh";
-        section.style.display = "none";
-
-
-
-
-
-    }
-
-})
+    h2.style.display = "none";
+    ul.style.display = "block";
+    ul.style.height = "100vh";
+    section.style.display = "none";
+  }
+});
