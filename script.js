@@ -57,6 +57,12 @@ var btn = document.getElementById("myBtn");
 // Получить элемент <span>, который закрывает модальный
 var span = document.getElementsByClassName("close")[0];
 
+// //store submit button
+// let register = document.querySelector(".registerbtn");
+
+// //store message after submit
+// let message = document.querySelector("#response");
+
 // Когда пользователь нажимает на кнопку, откройте модальный
 btn.onclick = function() {
   modal.style.display = "block";
@@ -73,3 +79,9 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+// register.onclick = function (event) {
+//   modal.style.display = "block";
+//   message.style.display ="block";
+// }
+

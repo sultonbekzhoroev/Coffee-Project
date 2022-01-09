@@ -33,17 +33,20 @@
         <div class="modal-content">
           <span class="close">&times;</span>
         
-            <form>
-              <p class="regist">Register and get a gift from us</p>
+            <form id="form">
+              <p class="registP">Register and get a gift from us</p>
   
-              <label for="name"><b>Name</b></label>
-              <input type="text" placeholder="Enter Name" name="name" id="form-name" required>
+              <label class="modform" for="name"><b>Name</b></label>
+              <input class="modinput" type="text" placeholder="Enter Name" name="name" id="form-name" required>
   
-              <label for="last-name"><b>Last Name</b></label>
-              <input type="text" placeholder="Enter Last Name" name="last-name" id="form-lastname" required>
+              <label class="modform" for="last-name"><b>Last Name</b></label>
+              <input class="modinput" type="text" placeholder="Enter Last Name" name="last-name" id="form-lastname" required>
   
-              <label for="email"><b>Email</b></label>
-              <input type="email" placeholder="Enter Email" name="email" id="email" required>
+              <label class="modform" for="email"><b>Email</b></label>
+              <input class="modinput" type="email" placeholder="Enter Email" name="email" id="email" 
+              required>
+
+              <!-- <div id="response">You have sucessfully registered! We will get in touch with you via email to send your gift to you!</div> -->
   
               <button type="submit" class="registerbtn">Register</button>
   
@@ -116,6 +119,8 @@
     </div>
 
     <script src="./script.js" type="module"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
   </body>
   </html>
   

@@ -4,6 +4,8 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lemonada:wght@300&family=Licorice&family=Luxurious+Roman&family=Roboto+Mono:wght@300&display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab:wght@700&display=swap');
+
 body {
   background-position: center;
   background-repeat: no-repeat;
@@ -214,13 +216,14 @@ footer {
 
 /* Модальное содержание/коробка */
 .modal-content {
-  background-image: url(https://images.unsplash.com/photo-1494346480775-936a9f0d0877?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGNvZmZlZSUyMHNob3B8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
+  background-image: url(https://images.unsplash.com/photo-1453614512568-c4024d13c247?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y29mZmVlJTIwc2hvcHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
   background-size: cover;
+  background-position: center;
   opacity: 0.9;
   margin: 15% auto; /* 15% сверху и по центру */
   padding: 20px;
   border: 1px solid #888;
-  width: 80%; /* Может быть больше или меньше, в зависимости от размера экрана */
+  width: 60%; /* Может быть больше или меньше, в зависимости от размера экрана */
   height: 40%;
   border-radius: 20px;
 }
@@ -251,8 +254,6 @@ footer {
     margin-left: 60px;
     margin-top: 5px;
     background: transparent;
-    font-family: "Roboto Mono", monospace, sans-serif;
-    font-weight: bold;
 }
 
 .registerbtn {
@@ -261,6 +262,37 @@ footer {
   border-radius: 5px;
 }
 
+.registP {
+  color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  -webkit-text-stroke-width: 0.9px;
+  -webkit-text-stroke-color: black;
+}
+
+.modform {
+  font-size: 20px;
+  font-weight: 900;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 10px;
+  color: whitesmoke;
+  -webkit-text-stroke-width: 0.9px;
+  -webkit-text-stroke-color: black;
+}
+
+#response {
+  display: none;
+}
 
 
+/* responsiveness of modal form */
+
+@media (max-width: 700px) {
+  #myModal{
+    display: flex;
+    flex-direction: column;
+  }
+
+}
 
