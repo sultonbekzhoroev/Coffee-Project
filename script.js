@@ -105,20 +105,6 @@ const section = document.querySelector(".section-center");
 const h2 = document.querySelector("h2");
 const ul = document.querySelector("ul");
 const logoImg = document.querySelector("img");
-const items = document.querySelectorAll(".items");
-
-if (items && items.length) {
-  section.addEventListener("click", (e) => {
-    const index = data.findIndex((elem, index, arr) => {
-      return elem.id === parseInt(e.target.id, 16);
-    });
-    if (index !== -1) {
-      console.log(data[index]);
-      const w = window.open("http://127.0.0.1:5503/link.html", "");
-      w.data = index;
-    }
-  });
-}
 
 navToggle.addEventListener("click", () => {
   if (ul.classList.contains("show-header-menu")) {
