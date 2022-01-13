@@ -50,19 +50,6 @@ window.addEventListener("load", function () {
 })
 
 
-// Получить модальный
-let modal = document.getElementById("myModal");
-
-// Получить кнопку, которая открывает модальный
-let btn = document.getElementById("myBtn");
-
-// Получить элемент <span>, который закрывает модальный
-let span = document.getElementsByClassName("close")[0];
-
-// //store submit button
-let register = document.querySelector(".registerbtn");
-=======
-});
 
 /* filter btn */
 
@@ -141,8 +128,57 @@ navToggle.addEventListener("click", () => {
   }
 
 }
+)
+
+// Получить модальный
+let modal = document.getElementById("myModal");
+
+// получаем кнопку регистрации
+const registerBtn = document.querySelector('.registerbtn');
+
+// Ставим флаг на то, зареган пользватель или нет
+let isRegistered = false;
+
+// Приветственное сообщение после регистрации
+const welcomeMessage = document.querySelector('.welcome-message');
+/* Все инпуты взяты в отдельный блок с классом form-content чтобы этот блок легко было скрыть
+*/
+const formContent = document.querySelector('.form-content');
+
+// Получить кнопку, которая открывает модальный
+let btn = document.getElementById("myBtn");
+
+// Получить элемент <span>, который закрывает модальный
+let span = document.getElementsByClassName("close")[0];
+
+// //store submit button
+let register = document.querySelector(".registerbtn");
+
+// //store message after submit
+// let message = document.querySelector("#response");
+
+// Когда пользователь нажимает на кнопку, откройте модальный
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// Когда пользователь нажимает на <span> (x), закройте модальное окно
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// Когда пользователь щелкает в любом месте за пределами модального, закройте его
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
 
 
-
-});
-
+registerBtn.addEventListener('click', function(event) {
+   event.preventDefault(); // отменяем стандартное поведение браузера
+   isRegistered = true; // по клику флаг зарегистрирован, переводим в true
+   welcomeMessage.style.display="block"; // показываем привественное сообщение
+   formContent.style.display="none"; // скрываем весь блок с инпутами
+  
+})
