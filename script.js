@@ -47,9 +47,7 @@ searchBar.addEventListener("keyup", (e) => {
 window.addEventListener("load", function () {
   const loadWrapper = this.document.querySelector(".load-wrapper");
   loadWrapper.parentElement.removeChild(loadWrapper);
-
-})
-
+});
 
 // Получить модальный
 let modal = document.getElementById("myModal");
@@ -62,11 +60,8 @@ let span = document.getElementsByClassName("close")[0];
 
 // //store submit button
 let register = document.querySelector(".registerbtn");
-=======
-});
 
 /* filter btn */
-
 
 const btnContainer = document.querySelector(".btn-container");
 // display all items when page loads
@@ -140,10 +135,4 @@ navToggle.addEventListener("click", () => {
     ul.style.height = "100vh";
     section.style.display = "none";
   }
-
-}
-
-
-
 });
-
