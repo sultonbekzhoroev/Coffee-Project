@@ -27,9 +27,10 @@
         <ul id="header_menu">
           <li><a href="#">HOME</a></li>
           <li><a href="#">MENU</a></li>
-          <li><a href="#">OUR ROASTER</a></li>
           <li><a href="#">CONTACT US</a></li>
+          <li><button id="myBtn">Gift</button></li>
         </ul>
+        <!-- Trigger/Open Modal Window -->
       </header>
 
       <div class="logo logo-wrapper">
@@ -78,6 +79,57 @@
           width="60%"
           height="500px"
         ></iframe>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+      <!-- Content of Modal -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+
+        <form id="form">
+          <p class="welcome-message">
+            Thank you for registering on our website! We will get in touch with
+            you via email to send the gift to you!
+          </p>
+          <div class="form-content">
+            <p class="registP">Register and get a gift from us</p>
+            <label class="modform" for="name"><b>Name</b></label>
+            <input
+              class="modinput"
+              type="text"
+              placeholder="Enter Name"
+              name="name"
+              id="form-name"
+              required
+            />
+
+            <label class="modform" for="last-name"><b>Last Name</b></label>
+            <input
+              class="modinput"
+              type="text"
+              placeholder="Enter Last Name"
+              name="last-name"
+              id="form-lastname"
+              required
+            />
+
+            <label class="modform" for="email"><b>Email</b></label>
+            <input
+              class="modinput"
+              type="email"
+              placeholder="Enter Email"
+              name="email"
+              id="email"
+              required
+            />
+
+            <!-- <div id="response">You have sucessfully registered! We will get in touch with you via email to send your gift to you!</div> -->
+
+            <button type="submit" class="registerbtn">Register</button>
+          </div>
+        </form>
       </div>
     </div>
 

@@ -228,6 +228,128 @@ input {
   display: none;
 }
 
+/* Модальный (фон) */
+.modal {
+  display: none; /* Скрыто по умолчанию */
+  position: fixed; /* Оставаться на месте */
+  z-index: 1; /* Сидеть на вершине */
+  left: 0;
+  top: 0;
+  width: 100%; /* Полная ширина */
+  height: 100%; /* Полная высота */
+  overflow: auto; /* Включите прокрутку, если это необходимо */
+  background-color: rgb(0, 0, 0); /* Цвет запасной вариант */
+  background-color: rgba(0, 0, 0, 0.4); /* Черный с непрозрачностью */
+}
+
+.welcome-message {
+  display: none;
+  color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  -webkit-text-stroke-width: 0.9px;
+  -webkit-text-stroke-color: black;
+  text-align: center;
+}
+
+#form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Модальное содержание/коробка */
+.modal-content {
+  background-image: url(https://images.unsplash.com/photo-1453614512568-c4024d13c247?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y29mZmVlJTIwc2hvcHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
+  background-size: cover;
+  background-position: center;
+  opacity: 0.9;
+  margin: 15% auto; /* 15% сверху и по центру */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%; /* Может быть больше или меньше, в зависимости от размера экрана */
+  height: 40%;
+  border-radius: 20px;
+}
+
+/* Кнопка закрытия */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+
+/* style of gift button */
+#myBtn {
+  width: 100px;
+  padding: 10px;
+  font-size: 18px;
+  text-transform: uppercase;
+  border-radius: 20px;
+  margin-left: 60px;
+  margin-top: 5px;
+  background: transparent;
+}
+
+.registerbtn {
+  margin-top: 20px;
+  padding: 7px 15px;
+  border-radius: 5px;
+}
+
+.registP {
+  color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  -webkit-text-stroke-width: 0.9px;
+  -webkit-text-stroke-color: black;
+}
+
+.modform {
+  font-size: 20px;
+  font-weight: 900;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 10px;
+  color: whitesmoke;
+  -webkit-text-stroke-width: 0.9px;
+  -webkit-text-stroke-color: black;
+}
+
+#response {
+  display: none;
+}
+
+.modform,
+.registP {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modinput,
+.registerbtn {
+  display: block;
+  margin: auto;
+  margin-bottom: 12px;
+}
+
+.modinput {
+  width: 300px;
+}
+
 /* responsive */
 
 @media (max-width: 800px) {
@@ -315,5 +437,14 @@ input {
   header #header_menu li a:hover {
     background: none;
     font-size: 1.5rem;
+  }
+
+  .modinput {
+    width: 150px;
+  }
+
+  #myBtn {
+    display: block;
+    margin: auto;
   }
 }
